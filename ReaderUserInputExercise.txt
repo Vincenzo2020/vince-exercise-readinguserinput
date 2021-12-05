@@ -5,22 +5,16 @@ import java.util.Scanner;
 public class Week2ReadingUserInputExercise {
 	
 	public static void main(String[] args) {
-		
-		int number = 300;
-		
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Type a number between 50 and 300: ");
-		String UserInput = scanner.nextLine();
-		Integer convertedInput = Integer.parseInt(UserInput);
-		
-		if (number >= 50) { 
-			System.out.println("Yes!");			
+		int number;
+		Scanner scanner = new Scanner(System.in);		
+		System.out.println("Type a number between 50 and 300: ");	
+		String input = scanner.nextLine();
+		number = Integer.parseInt(input);		
+		if (number >= 50 && number <= 300 ) {
+			System.out.println("Yes!");						
 		}
-			else if (number > 300) {
-			System.out.println("No!");
-		}
-			else {
-			System.out.println("No!");
+		else {
+		System.out.println("No!");
 		}
 		scanner.close();
 	}
